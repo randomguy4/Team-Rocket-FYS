@@ -10,13 +10,22 @@ class Enemy {
   void init () {
 
     radius = 80;
-    clrEnemy = color (255, 0, 0);
+    clrEnemy = color (0, 255, 0);
     x = 512;
     y = 100;
   }
 
-
+float circleY = 50;
   void draw () {
+   ellipse(525, circleY, 80, 80); 
+  circleY++;
+  if (circleY > height) {
+   circleY = 0;
+   
+  }
+
+
+
     lane = int(random(3));
 
     if (lane == 0) {
