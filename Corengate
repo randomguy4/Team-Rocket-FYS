@@ -1,5 +1,3 @@
-
- 
 class Lanes {
 
   
@@ -12,9 +10,7 @@ class Lanes {
       image(d.get(0, d.height-int(y), d.width, int(y)), 288, 0);
       text("score: " + m, 10, 50);
       
-     if (m %100 == 0) { // level 1 speed
-        speed += 0.3;
-      }  
+     
   if (alive==false) {
     fill(255,40,10);
     textSize(80);
