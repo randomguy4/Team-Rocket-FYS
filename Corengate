@@ -17,7 +17,7 @@ class Enemy {
     radius = diameter /2;
     clrEnemy = color (255, 0, 0);
     
-    enemyY = 50;
+    enemyY = 70;
    
   
    
@@ -54,13 +54,10 @@ class Enemy {
     }
   if (dist(theChr.x, theChr.y, enemyX, enemyY) < radius) {
    // Collision
-   alive = false;
+ alive=false;
    // reset();
   }
-  
-  if ( m %100 == 0) { // level 1 speed enemy
-      enemySpeed += 0.3;
-      }
+
   }
     void move(){
 // Change the x location by speed
