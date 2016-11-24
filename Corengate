@@ -1,4 +1,5 @@
 class Shot {
+ 
     
     float px, py, vy;
     int radius;
